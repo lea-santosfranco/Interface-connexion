@@ -1,0 +1,96 @@
+* {
+    margin: 0; /* Sert à supprimer les marges par défaut des navigateurs*/
+    padding: 0; /*Sert à supprimer les espacements internes par défaut*/
+    box-sizing: border-box; /*Force la largeur à inclure le padding et les bordures*/
+    font-family: Arial, sans-serif; /*Police d'écriture*/
+}
+
+
+body {
+    background-color: #f0f2f5; /*Couleur de fond*/
+    display: flex; /*Active Flexbox*/
+    justify-content: center; /*Centre le contenu horizontalement*/
+    align-items: center; /*Centre le contenu verticalement*/
+    height: 100vh; /*Force le body à faire 100% de l'écran*/
+}
+
+#Mainbox {
+    background-color: rgb(219, 223, 228); /*Couleur de fond*/
+    padding: 40px; /*Espace entre le bord de la boite et le contenu*/
+    border-radius: 10px; /*Arrondi les coins de la boite*/
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /*Ajout d'ombre/relief*/
+    width: 350px; /*Largeur de la boite*/
+    
+    display: flex;
+    flex-direction: column; /*Empile les éléments les uns sous les autres*/
+    align-items: center;
+}
+
+.mainlogo img {
+    width: 80px;  /*Taille du logo*/
+    height: 80px;
+    border-radius: 50%; /*Transforme le carré en cercle*/
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.input-group .logo {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+.input-group .logo img{
+    width: 20px;
+}
+
+.input-group input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+    gap: 5px;
+}
+
+button {
+    background-color: #63226b;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
